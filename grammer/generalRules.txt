@@ -1,0 +1,15 @@
+=========================================================================================================
+
+                             *** JAVASCRIPT GRAMMER GENERAL RULES ***
+
+=========================================================================================================
+
+
+
+we have 3 types of statements in JAVASCRIPT and they are ===::=> 
+1. declaration statements
+2. assignment expressions
+3 .expression statement
+
+
+
