@@ -12,22 +12,7 @@ for(let i = 1; i < arr.length; i++){
 return quickSort(left).concat(pivot,quickSort(right)); 
 };
 
-console.log(quickSort([4,6,10,6,7,88,64,3,1])); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(quickSort(["a","b","c"])); 
 
 
 
