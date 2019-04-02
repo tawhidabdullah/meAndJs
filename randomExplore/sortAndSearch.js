@@ -37,4 +37,4 @@ function sortAndSearch(array, item) {
   return binarySearch(sortedArray, item);
 }
 
-console.log(sortAndSearch([6, 2, 5, 45, 54], 5));
+console.log(sortAndSearch([6, 2, 3, 5, 45, 54], 5));
