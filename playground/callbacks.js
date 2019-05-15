@@ -8,8 +8,9 @@ const getUser = (id, callback) => {
 
 getUser(967021, printUserData);
 
-function printUserData(data) {
-  console.log(data);
+function printUserData(data) {   
+  console.log(data); 
+  console.log(data); 
 }
 // get a life , tawhid abdullah
   
