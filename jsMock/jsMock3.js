@@ -39,4 +39,31 @@ const converInMilitaryTimeContext = time => {
   }
 };
 
-console.log(converInMilitaryTimeContext("09:03PM"));
+// console.log(converInMilitaryTimeContext("09:03PM"));
+
+
+
+// method chaining
+
+const methodChaining = {
+  a(){
+    console.log('a'); 
+    return this;
+
+  },
+  b(){
+    console.log('b'); 
+    return this; 
+  }
+}; 
+
+methodChaining.a().b().a(); 
+
+
+
+
+
+// number to hex 
+
+let x = 35; 
+console.log(x.toString(16)); 
