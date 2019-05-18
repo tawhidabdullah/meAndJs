@@ -20,7 +20,6 @@ const printInSetTimeOut = arr => {
 };
 
 // console.log(printInSetTimeOut( [5, 120, 15, 21]));
-
 const converInMilitaryTimeContext = time => {
   let len = time.length;
   const normalize = (s, ans) => {
@@ -32,7 +31,8 @@ const converInMilitaryTimeContext = time => {
 
   if (time[len - 2] + time[len - 1] === "PM") {
     let hr = parseInt(time.slice(0, 2)) + 12;
-    let ans = toString(hr);
+    //  console.log('ansss',hr);
+    let ans = +hr;
     console.log(normalize(2, ans));
   } else {
     console.log(normalize(0, ""));
