@@ -1,5 +1,4 @@
-const countOfMaximumNumbers = () => {
-  const array = [1, 3, 4, 2, 2, 5, 5, 44, 44, 44];
+const countOfMaximumNumbers = array => {
   let maxiMumCounter = 0;
   const maxiMumNumber = Math.max(...array);
   for (item of array) {
@@ -8,13 +7,11 @@ const countOfMaximumNumbers = () => {
   return maxiMumCounter;
 };
 
-// console.log(countOfMaximumNumbers());
+// console.log(countOfMaximumNumbers([1, 3, 4, 2, 2, 5, 5, 44, 44, 44]));
 
 // // sort with set
 
-const printInSetTimeOut = () => {
-  const arr = [5, 120, 15, 21];
-
+const printInSetTimeOut = arr => {
   for (let i = 0; i < arr.length; i++) {
     setTimeout(() => {
       console.log(`index: ${i}, element: ${arr[i]}`);
@@ -22,17 +19,24 @@ const printInSetTimeOut = () => {
   }
 };
 
-// console.log(printInSetTimeOut());
+// console.log(printInSetTimeOut( [5, 120, 15, 21]));
 
-const converInMilitaryTimeContext = () => {
-  let time = "09:03AM";
-  
+const converInMilitaryTimeContext = time => {
+  let len = time.length;
+  const normalize = (s, ans) => {
+    for (let i = s; i < len - 2; i++) {
+      ans += time[i];
+    }
+    return ans;
+  };
 
-
-
-// AM = RAAT 12:01 TO SOKAL 12:00
-// PM = SOKAL 12:01 TO RAAT 12:00
-  
+  if (time[len - 2] + time[len - 1] === "PM") {
+    let hr = parseInt(time.slice(0, 2)) + 12;
+    let ans = toString(hr);
+    console.log(normalize(2, ans));
+  } else {
+    console.log(normalize(0, ""));
+  }
 };
 
-console.log(converInMilitaryTimeContext());
+console.log(converInMilitaryTimeContext("09:03PM"));
